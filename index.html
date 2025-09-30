@@ -1,0 +1,133 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Aniversary 4th🎉</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Anime.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+  <div class="wrap" id="card">
+    <!-- Header -->
+    <header>
+      <div class="avatar" id="avatar">
+        <img src="IMG_20211005_224743.jpg" alt="Foto Pacar">
+      </div>
+      <div class="title">
+        <div class="ribbon">Untukmu, Sayangku 💖</div>
+        <h1 id="nama">Oktavioni Esterina</h1>
+        <p class="lead">Wanita cantik yang aku temui sejak tahun 2021.</p>
+      </div>
+    </header>
+
+    <!-- Musik -->
+    <audio id="bgMusic" loop>
+      <source src="H.E.R. - Best Part (Lyrics) Ft. Daniel Caesar - Unique Sound.mp3" type="audio/mp3">
+    </audio>
+
+    <button class="music-btn" id="musicBtn">🎵</button>
+
+    <!-- Main Content -->
+    <main>
+      <div>
+        <!-- Pesan -->
+        <div class="card message" id="messageCard">
+          <h2>Hai sayang,</h2>
+          <p>
+            Menyambut 4 Tahun sama kamu aku buat galeri kecil ini baeee.
+            Maaf yaa baee simple aja buatnya ini. 
+            aku si mau buat yang wahh banget tapi waktunya mepet hihihi.😁😁😁
+            Oh iyaa baee jika kamu ngerasa kurang kamu bisa nambahin foto atau video nyaa tinggal request aja ke aku biar aku buatin yaa.
+          </p>
+        </div>
+
+        <!-- Galeri -->
+        <div class="card" style="margin-top:12px">
+          <div class="gallery-header">
+            <strong>Galeri Foto & Video</strong>
+            <small style="color:var(--muted)">Klik untuk memperbesar / play</small>
+          </div>
+
+          <div class="gallery" id="gallery">
+            <!-- Foto -->
+            <div class="thumb" data-type="image" data-full="IMG-20231023-WA0019.jpg">
+              <img src="IMG-20231023-WA0019.jpg" alt="Momen 1">
+              <div class="meta">2024</div>
+            </div>
+            <div class="thumb" data-type="image" data-full="IMG-20240114-WA0027.jpg">
+              <img src="IMG-20240114-WA0027.jpg" alt="Momen 2">
+              <div class="meta">Cantik Banget Unchhh!</div>
+            </div>
+            <div class="thumb" data-type="image" data-full="IMG-20240218-WA0017.jpg">
+              <img src="IMG-20240218-WA0017.jpg" alt="Momen 3">
+              <div class="meta">Nemenin Recovery</div>
+            </div>
+
+            <!-- Video -->
+            <div class="thumb" data-type="video" data-full="f9290a08-34cd-4caf-90ed-84afad5cbd45.mp4">
+              <video src="f9290a08-34cd-4caf-90ed-84afad5cbd45.mp4" muted loop></video>
+              <div class="meta">Kangen Warkop Biru</div>
+            </div>
+            <div class="thumb" data-type="video" data-full="VID-20240517-WA0011.mp4">
+              <video src="VID-20240517-WA0011.mp4" muted loop></video>
+              <div class="meta">Plot twist</div>
+            </div>
+            <div class="thumb" data-type="video" data-full="VID-20231226-WA0061.mp4">
+              <video src="VID-20231226-WA0061.mp4" muted loop></video>
+              <div class="meta">Ultah Botak</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="side">
+        <div class="info card">
+          <div class="row">
+            <div>
+              <strong>Tanggal Aniversary</strong>
+              <div class="muted-text">01 Oktober 2021</div>
+            </div>
+            <div>🎉</div>
+          </div>
+          <hr class="divider">
+          <div class="muted-text">
+            Fyi kita berdua sudah melewati hal yang struggle dari bbna vio kuliah di tasikmalaya,bbna bintang kecelakaan,sampe sekarang di kerjaan kita masih ada aja orang yang engga enakin hihihi. yaahh dengan begitu kita masih nguatin satu sama lain sampe sekarang 01 oktober 2025.💖💖
+            Satu lagi, Faktanya tembok kita tinggi tauuu.😁😁😁😁😁
+          </div>
+        </div>
+
+        <div class="card controls">
+          <button class="btn" id="shuffle">Acak Tampilan</button>
+          <button class="btn primary" id="showAll">Tampilkan Semua</button>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      Made with 💖 — Bintang Ammar.
+    </footer>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="close" id="lbClose">✕</div>
+    <div class="lightbox__img" id="lbImgWrap"></div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
